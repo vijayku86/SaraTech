@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ParentCellIdentifier" id="KGk-i7-Jjw" customClass="ParentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmT-Fs-UeH">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="WmT-Fs-UeH" secondAttribute="height" multiplier="1:1" id="1Iz-N0-yft"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                        <state key="normal" title="&gt;">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="arrowBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eoc-LB-qhg"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="166-AV-WDQ">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="166-AV-WDQ" secondAttribute="height" multiplier="70:9" id="6D2-Vz-ten"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="166-AV-WDQ" firstAttribute="leading" secondItem="WmT-Fs-UeH" secondAttribute="trailing" constant="-2" id="1Dk-zc-iH1"/>
+                    <constraint firstAttribute="trailing" secondItem="166-AV-WDQ" secondAttribute="trailing" constant="4" id="CgL-v0-xGH"/>
+                    <constraint firstAttribute="bottom" secondItem="WmT-Fs-UeH" secondAttribute="bottom" constant="3" id="EN3-qK-ag3"/>
+                    <constraint firstItem="WmT-Fs-UeH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="HuZ-mp-6Qi"/>
+                    <constraint firstAttribute="bottom" secondItem="166-AV-WDQ" secondAttribute="bottom" constant="3" id="NpL-nQ-JlL"/>
+                    <constraint firstItem="WmT-Fs-UeH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="qJN-wk-xxD"/>
+                    <constraint firstItem="166-AV-WDQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="tKf-rG-Q0N"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnArrow" destination="WmT-Fs-UeH" id="jvd-uP-p1V"/>
+                <outlet property="lblTitle" destination="166-AV-WDQ" id="WUN-Lu-4ZW"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
